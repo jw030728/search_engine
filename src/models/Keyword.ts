@@ -22,6 +22,6 @@ export class Keyword extends Model {
     @Column(DataType.STRING(40))
     name: string;
 
-    @BelongsToMany(() => Link, () => KeywordLink)
+    @BelongsToMany(() => Link, () => KeywordLink)//관계설정 belongstomany로
     links: Link[];
 }
